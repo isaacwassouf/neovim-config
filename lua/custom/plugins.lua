@@ -11,7 +11,8 @@ local plugins = {
         "dockerfile-language-server",
         "docker-compose-language-service",
         "yaml-language-server",
-        "pyright"
+        "pyright",
+        "prettier",
       },
     },
   },
@@ -24,7 +25,7 @@ local plugins = {
   },
   {
     "jose-elias-alvarez/null-ls.nvim",
-    ft = "go",
+    lazy = false,
     opts = function()
       return require "custom.configs.null-ls"
     end,
