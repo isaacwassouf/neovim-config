@@ -70,6 +70,10 @@ local plugins = {
     keys = {
       { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
     }
+  },
+  {
+    "mbbill/undotree",
+    lazy = false
   }
 }
 
