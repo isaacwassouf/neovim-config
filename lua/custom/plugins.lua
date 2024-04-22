@@ -13,6 +13,7 @@ local plugins = {
         "yaml-language-server",
         "pyright",
         "prettier",
+        "black",
       },
     },
   },
