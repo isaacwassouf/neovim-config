@@ -17,6 +17,7 @@ local plugins = {
       },
     },
   },
+
   {
     "neovim/nvim-lspconfig",
     config = function()
@@ -24,6 +25,7 @@ local plugins = {
       require "custom.configs.lspconfig"
     end,
   },
+
   {
     "nvimtools/none-ls.nvim",
     lazy = false,
@@ -31,6 +33,7 @@ local plugins = {
       return require "custom.configs.none-ls"
     end,
   },
+
   {
     "olexsmir/gopher.nvim",
     ft = "go",
@@ -41,10 +44,12 @@ local plugins = {
       vim.cmd [[silent! GoInstallDeps]]
     end,
   },
+
   {
     "github/copilot.vim",
     lazy = false
   },
+
   {
     "roobert/tailwindcss-colorizer-cmp.nvim",
     lazy = false,
@@ -53,6 +58,7 @@ local plugins = {
       require "custom.configs.tailwindcss-colorizer-cmp"
     end
   },
+
   {
     "kdheepak/lazygit.nvim",
     cmd = {
@@ -72,9 +78,20 @@ local plugins = {
       { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
     }
   },
+
   {
     "mbbill/undotree",
     lazy = false
+  },
+
+  {
+    'brenoprata10/nvim-highlight-colors',
+    lazy = false,
+    config = function()
+      require('nvim-highlight-colors').setup({
+        enable_tailwind = true,
+      })
+    end
   }
 }
 

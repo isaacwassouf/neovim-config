@@ -21,6 +21,9 @@ opt.shiftwidth = 2
 opt.smartindent = true
 opt.tabstop = 2
 opt.softtabstop = 2
+opt.list = true
+opt.listchars = { tab = "▸ ", trail = "·", extends = "…", precedes = "…", eol = "↲" }
+opt.termguicolors = true
 
 opt.fillchars = { eob = " " }
 opt.ignorecase = true
