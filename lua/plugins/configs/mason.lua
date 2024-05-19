@@ -1,5 +1,18 @@
 local options = {
-  ensure_installed = { "lua-language-server" }, -- not an option from mason.nvim
+  ensure_installed = {
+    "lua-language-server",
+    "gopls",
+    "typescript-language-server",
+    "tailwindcss-language-server",
+    "svelte-language-server",
+    "eslint-lsp",
+    "dockerfile-language-server",
+    "docker-compose-language-service",
+    "yaml-language-server",
+    "pyright",
+    "prettier",
+    "black",
+  }, -- not an option from mason.nvim
 
   PATH = "skip",
 

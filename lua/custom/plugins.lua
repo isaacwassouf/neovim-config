@@ -1,24 +1,5 @@
 local plugins = {
   {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "gopls",
-        "typescript-language-server",
-        "tailwindcss-language-server",
-        "svelte-language-server",
-        "eslint-lsp",
-        "dockerfile-language-server",
-        "docker-compose-language-service",
-        "yaml-language-server",
-        "pyright",
-        "prettier",
-        "black",
-      },
-    },
-  },
-
-  {
     "neovim/nvim-lspconfig",
     config = function()
       require "plugins.configs.lspconfig"
