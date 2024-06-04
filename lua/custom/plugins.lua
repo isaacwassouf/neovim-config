@@ -15,6 +15,9 @@ local plugins = {
         "pyright",
         "prettier",
         "black",
+        "gofumpt",
+        "goimports-reviser",
+        "golines"
       },
     },
   },
