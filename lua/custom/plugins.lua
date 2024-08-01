@@ -17,7 +17,8 @@ local plugins = {
         "black",
         "gofumpt",
         "goimports-reviser",
-        "golines"
+        "golines",
+        "intelephense",
       },
     },
   },
@@ -51,7 +52,14 @@ local plugins = {
 
   {
     "github/copilot.vim",
-    lazy = false
+    lazy = false,
+    config = function() -- Mapping tab is already used by NvChad
+      vim.g.copilot_no_tab_map = true;
+      vim.g.copilot_assume_mapped = true;
+      vim.g.copilot_tab_fallback = "";
+      -- The mapping is set to other key, see custom/lua/mappings
+      -- or run <leader>ch to see copilot mapping section
+    end
   },
 
   {
@@ -94,6 +102,17 @@ local plugins = {
     config = function()
       require('nvim-highlight-colors').setup({
         enable_tailwind = true,
+      })
+    end
+  },
+
+  {
+    "kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    config = function()
+      require("nvim-surround").setup({
+        -- Configuration here, or leave empty to use defaults
       })
     end
   }

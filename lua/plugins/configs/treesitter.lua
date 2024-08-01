@@ -14,6 +14,9 @@ local options = {
     "bash",
     "python",
     "go",
+    "gomod",
+    "gosum",
+    "gotmpl",
     "svelte",
   },
 

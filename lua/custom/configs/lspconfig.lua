@@ -13,7 +13,7 @@ lspconfig.gopls.setup {
   settings = {
     gopls = {
       completeUnimported = true,
-      usePlaceholders = true,
+      -- usePlaceholders = true,
       analyses = {
         unusedparams = true,
       },
@@ -60,3 +60,9 @@ lspconfig.pyright.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
+
+lspconfig.intelephense.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
