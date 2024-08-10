@@ -21,7 +21,8 @@ M.ui = {
     CursorLineNr = {
       fg = "orange",
     }
-  }
+  },
+  transparency = true,
 }
 
 M.plugins = "custom.plugins"
