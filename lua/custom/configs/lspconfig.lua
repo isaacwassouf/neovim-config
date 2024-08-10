@@ -61,7 +61,7 @@ lspconfig.pyright.setup {
   capabilities = capabilities,
 }
 
-lspconfig.intelephense.setup {
+lspconfig.nginx_language_server.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
