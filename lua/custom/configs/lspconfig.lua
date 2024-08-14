@@ -66,3 +66,8 @@ lspconfig.nginx_language_server.setup {
   capabilities = capabilities,
 }
 
+lspconfig.pbls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+

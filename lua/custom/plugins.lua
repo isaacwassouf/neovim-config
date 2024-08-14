@@ -19,6 +19,7 @@ local plugins = {
         "goimports-reviser",
         "golines",
         "nginx-language-server",
+        "pbls",
       },
     },
   },
