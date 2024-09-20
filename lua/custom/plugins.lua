@@ -154,6 +154,15 @@ local plugins = {
         desc = "Quickfix List (Trouble)",
       },
     },
+  },
+
+  {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    config = function()
+      require("harpoon").setup({})
+    end,
   }
 }
 

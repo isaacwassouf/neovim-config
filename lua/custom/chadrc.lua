@@ -7,11 +7,6 @@ opt.foldmethod = "manual"
 -- disable automatic folding
 opt.foldenable = false
 
-vim.keymap.set("n", "<leader>cd", function ()
-  vim.diagnostic.open_float()
-end)
-
-
 ---@type ChadrcConfig
 local M = {}
 
@@ -20,6 +15,7 @@ M.ui = {
   hl_override = {
     CursorLineNr = {
       fg = "orange",
+      undercurl = true,
     }
   },
   transparency = true,

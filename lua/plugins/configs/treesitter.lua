@@ -18,6 +18,7 @@ local options = {
     "gosum",
     "gotmpl",
     "svelte",
+    "java",
   },
 
   highlight = {
